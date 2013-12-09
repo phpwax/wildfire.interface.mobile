@@ -1,0 +1,10 @@
+
+<script type='text/javascript'>
+var uagents = ["Smartphone","iPhone","Blackberry" ,"PlayStation Portable","Android","iPod", "Opera Mini", 'iPad'], tinymce_mobile=false;
+for(ua in uagents) if(navigator.userAgent.indexOf(uagents[ua]) > -1) tinymce_mobile = true;
+if(tinymce_mobile){
+  main_tinymce_class = "tinymce_disabled";
+  simple_tinymce_class = "simple_tinymce_disabled";
+}
+</script>
+
