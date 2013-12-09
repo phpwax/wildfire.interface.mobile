@@ -1,25 +1,39 @@
 @media only screen and (max-width : 700px) {
+  #nav_container_block{
+    position: fixed;
+    right:0;
+    top: 0;
+    width:36px;
+    height:55px;
+    z-index:100;
+    background:transparent url('/images/wildfire.interface.mobile/icons/menu.png') no-repeat center center;
+  }
+  #nav_container_block:hover{
+    background-image: url('/images/wildfire.interface.mobile/icons/menu-active.png');
+  }
   #primary_navigation{
     position: fixed;
-    right:0px;
-    top: 17px;
+    height:auto;
     width:100px;
-    z-index:100;
-    padding-top:30px;
+    padding:0;
+    top:50px;
+    margin:0;
+    z-index:200;
     border-width: 0;
-    background:transparent url('/images/wildfire.interface.mobile/icons/menu.png') no-repeat 95% top;
-  }
-  #primary_navigation li{
-    position: relative;
-    width:100px;
+    display:none;
     background:#333333;
+    margin-left:-64px;
+  }
+    #nav_container_block:hover #primary_navigation{
+      display: block;
+    }
+  #primary_navigation li{
+    width:100%;
+
     margin:0;
     padding:0;
-    display:none;
   }
-  #primary_navigation:hover li{
-    display: block;
-  }
+
   #primary_navigation li a{
     color:#fff;
     display:block;
