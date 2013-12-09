@@ -2,4 +2,7 @@
   .joins .join{
     width:100%;
   }
+  .meta_tabs .edit_fields .field{
+    width:100%;
+  }
 }

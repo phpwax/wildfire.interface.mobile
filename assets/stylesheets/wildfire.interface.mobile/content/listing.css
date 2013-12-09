@@ -1,10 +1,17 @@
 @media only screen and (max-width : 700px) {
-  .tree_node{
+  .tree_node,
+  .data_table td.operations{
     overflow: visible;
     padding-right:35px;
     position: relative;
   }
-  .tree_operations{
+  td.operations{
+    padding:40px 30px 0 0;
+    width:30px;
+    min-height: 40px;
+  }
+  .tree_operations,
+  td.operations .inner_operations{
     position: absolute;
     right:0;
     width:30px;
@@ -12,13 +19,20 @@
     margin:2px 2px 2px 5px;
     background:transparent url('/images/wildfire.interface.mobile/icons/menu-small.png') no-repeat center 15px;
   }
-    .tree_operations:hover{
+    td.operations .inner_operations{
+      top:0;
+      margin:0;
+    }
+    .tree_operations:hover,
+    td.operations:hover
+    {
       cursor: pointer;
       background-color: #dfdfdf;
       height: auto;
     }
 
-    .tree_operations a.button{
+    .tree_operations a.button,
+    td.operations a.button{
       margin:0 0 0 -70px;
       border-radius: 0;
       display: none;
@@ -29,7 +43,11 @@
       .tree_operations a:first-child{
         margin-top:45px;
       }
-      .tree_operations:hover .button{
+      td.operations .inner_operations a:first-child{
+        margin-top:40px;
+      }
+      .tree_operations:hover .button,
+      td.operations:hover .button{
         display:block;
       }
   span.tree_col_status{
