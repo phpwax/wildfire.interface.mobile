@@ -1,0 +1,7 @@
+@media only screen and (max-width : 500px) {
+  .design_preview,
+  .responsive_switcher,
+  .design-header h3{
+    display:none;
+  }
+}

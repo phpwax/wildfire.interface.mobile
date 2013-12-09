@@ -50,4 +50,8 @@
   #cms-dashboard .indented .listing{
     margin:0 10px;
   }
+
+  .intro_block_content{
+    float:none;
+  }
 }
