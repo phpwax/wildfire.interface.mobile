@@ -1,0 +1,9 @@
+/** hide the entypo icons on the buttons **/
+
+@media only screen and (max-width : 1070px) {
+
+  #primary_navigation li b,
+  .button b{
+    display:none;
+  }
+}

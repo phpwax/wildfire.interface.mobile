@@ -5,5 +5,4 @@ CMSApplication::register_asset("wildfire", "css", "wildfire.interface.mobile");
 AutoLoader::$plugin_array[] = array("name"=>"wildfire.interface.mobile","dir"=>__DIR__);
 
 
-
 ?>
