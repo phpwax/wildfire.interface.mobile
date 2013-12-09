@@ -1,0 +1,8 @@
+@media only screen and (max-width : 700px) {
+  .existing_field span.cf{
+    width:98%;
+  }
+  #custom_form_existing_field ul{
+    max-height: 1800px;
+  }
+}
