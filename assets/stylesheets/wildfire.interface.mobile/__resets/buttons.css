@@ -1,6 +1,7 @@
 @media only screen and (max-width : 900px) {
   .button{
     margin-bottom:8px;
+    font-size:87%;
   }
 }
 @media only screen and (max-width : 700px) {
@@ -8,5 +9,15 @@
   .tree_operations .button{
     display:block;
     width:100px;
+    text-align: center;
+  }
+
+  #logout_button{
+    margin-right:40px;
+  }
+}
+@media only screen and (max-width : 400px) {
+  #logout_button{
+    display: none;
   }
 }
