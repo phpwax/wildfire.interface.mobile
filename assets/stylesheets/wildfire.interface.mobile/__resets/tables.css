@@ -2,8 +2,16 @@
   td.title{
     width:45%;
   }
+  #cms-dashboard td.title,
+  #cms-dashboard td.on{
+    width:auto;
+  }
+  td,th{
+    font-size:93%;
+  }
+
 }
-@media only screen and (max-width : 400px) {
+@media only screen and (max-width : 300px) {
   td.in{
     display:none;
   }
