@@ -15,7 +15,7 @@
     .tree_operations:hover{
       cursor: pointer;
       background-color: #dfdfdf;
-      box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+
       height: auto;
     }
 
@@ -34,7 +34,10 @@
         display:block;
       }
   span.tree_col_status{
-    margin:8px 0 3px 5px;
+    margin:12px 0 3px 5px;
+    text-indent: -999em;
+    padding:4px 9px;
+    border-radius: 300px;
   }
   .tree_node em.date{
     width:60px;
