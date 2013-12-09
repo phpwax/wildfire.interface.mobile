@@ -1,0 +1,43 @@
+@media only screen and (max-width : 700px) {
+  .tree_node{
+    overflow: visible;
+    padding-right:35px;
+    position: relative;
+  }
+  .tree_operations{
+    position: absolute;
+    right:0;
+    width:30px;
+    height: 40px;
+    margin:2px 2px 2px 5px;
+    background:transparent url('/images/wildfire.interface.mobile/icons/menu-small.png') no-repeat center 15px;
+  }
+    .tree_operations:hover{
+      cursor: pointer;
+      background-color: #dfdfdf;
+      box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+      height: auto;
+    }
+
+    .tree_operations a.button{
+      margin:0 0 0 -70px;
+      border-radius: 0;
+      display: none;
+      position: relative;
+      z-index: 10;
+      text-align: right;
+    }
+      .tree_operations a:first-child{
+        margin-top:45px;
+      }
+      .tree_operations:hover .button{
+        display:block;
+      }
+  span.tree_col_status{
+    margin:8px 0 3px 5px;
+  }
+  .tree_node em.date{
+    width:60px;
+  }
+
+}
