@@ -20,8 +20,7 @@
     margin:2px 2px 2px 5px;
     background:transparent url('/images/wildfire.interface.mobile/icons/menu-small.png') no-repeat center 15px;
   }
-  .tree_operations:hover,
-  td.operations .inner_operations:hover,
+
   .tree_operations.touched,
   td.operations.touched .inner_operations{
     background-image:url('/images/wildfire.interface.mobile/icons/menu-small-active.png');
