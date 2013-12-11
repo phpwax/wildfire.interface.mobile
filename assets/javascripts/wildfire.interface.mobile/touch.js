@@ -1,8 +1,11 @@
 function touch_setup(){
-
-  jQuery("body").on("click", "#nav_container_block, .tree_operations, td.operations", function(e){
-    jQuery(".touched").not(jQuery(this)).removeClass("touched");
-    jQuery(this).toggleClass("touched");
+  var touchfunc = function(obj){
+    jQuery(".touched").not(jQuery(obj)).removeClass("touched");
+    jQuery(obj).toggleClass("touched");
+  };
+  jQuery("body").hammer().on("tap", "#nav_container_block, .tree_operations, td.operations", function(){touchfunc(this);});
+  jQuery("body").on("tap", "#nav_container_block a, .tree_operations a, td.operations a", function(e){
+    e.stopPropagation();
   });
 }
 
