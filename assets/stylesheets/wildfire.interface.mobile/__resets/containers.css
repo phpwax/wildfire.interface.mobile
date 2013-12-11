@@ -8,7 +8,8 @@
     z-index:100;
     background:transparent url('/images/wildfire.interface.mobile/icons/menu.png') no-repeat center center;
   }
-  #nav_container_block:hover{
+  #nav_container_block:hover,
+  #nav_container_block.touched{
     background-image: url('/images/wildfire.interface.mobile/icons/menu-active.png');
   }
   #primary_navigation{
@@ -24,7 +25,7 @@
     background:#333333;
     margin-left:-64px;
   }
-    #nav_container_block:hover #primary_navigation{
+    #nav_container_block.touched #primary_navigation{
       display: block;
     }
   #primary_navigation li{

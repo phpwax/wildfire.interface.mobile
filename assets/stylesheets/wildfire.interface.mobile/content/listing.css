@@ -20,12 +20,19 @@
     margin:2px 2px 2px 5px;
     background:transparent url('/images/wildfire.interface.mobile/icons/menu-small.png') no-repeat center 15px;
   }
+  .tree_operations:hover,
+  td.operations .inner_operations:hover,
+  .tree_operations.touched,
+  td.operations.touched .inner_operations{
+    background-image:url('/images/wildfire.interface.mobile/icons/menu-small-active.png');
+  }
+
     td.operations .inner_operations{
       top:0;
       margin:0;
     }
-    .tree_operations:hover,
-    td.operations:hover
+    .tree_operations.touched,
+    td.operations.touched
     {
       cursor: pointer;
       background-color: #dfdfdf;
@@ -47,8 +54,8 @@
       td.operations .inner_operations a:first-child{
         margin-top:40px;
       }
-      .tree_operations:hover .button,
-      td.operations:hover .button{
+      .tree_operations.touched .button,
+      td.operations.touched .button{
         display:block;
       }
   span.tree_col_status{
