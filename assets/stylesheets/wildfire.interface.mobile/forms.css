@@ -1,3 +1,7 @@
+form,
+form *{
+  -webkit-appearance: none;
+}
 @media only screen and (max-width : 700px) {
   fieldset.submit{
     margin: 5px 0;
@@ -13,10 +17,11 @@
     margin:0;
     background:transparent url('/images/wildfire.interface.mobile/icons/menu-small.png') no-repeat center 15px;
   }
-  div.form-submit:hover{
+  div.form-submit.touched{
     cursor: pointer;
     background-color: #dfdfdf;
     height: auto;
+    background-image:url('/images/wildfire.interface.mobile/icons/menu-small-active.png');
   }
 
   div.form-submit .submit_field{
@@ -31,7 +36,7 @@
     div.form-submit .submit_field:first-child{
       margin-top:45px;
     }
-    div.form-submit:hover .submit_field{
+    div.form-submit.touched .submit_field{
       display:block;
     }
 

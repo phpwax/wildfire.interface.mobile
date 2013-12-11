@@ -3,8 +3,8 @@ function touch_setup(){
     jQuery(".touched").not(jQuery(obj)).removeClass("touched");
     jQuery(obj).toggleClass("touched");
   };
-  jQuery("body").hammer().on("tap", "#nav_container_block, .tree_operations, td.operations", function(){touchfunc(this);});
-  jQuery("body").on("tap", "#nav_container_block a, .tree_operations a, td.operations a", function(e){
+  jQuery("body").hammer().on("tap", "#nav_container_block, .tree_operations, td.operations, div.form-submit", function(){touchfunc(this);});
+  jQuery("body").on("tap", "#nav_container_block a, .tree_operations a, td.operations a, div.form-submit input", function(e){
     e.stopPropagation();
   });
 }
